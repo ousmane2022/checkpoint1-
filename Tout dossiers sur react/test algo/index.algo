@@ -1,0 +1,76 @@
+//checkpoint
+
+//première tache
+
+ALGORITHM bed_setence
+VAR
+   tabVoy : ARRAY_OF CHAR[];
+   sentence : STRING;
+   numVoy : INTEGER:= 0;
+   numMots: INTEGER:= 0;
+   selectedChar: CHAR;
+   selectedVoy: CHAR;
+   i, j : INTEGER;
+BEGIN
+   tabVoy :=["i", "u", "o","a","e","y", "I","U","O","A","E","Y"]
+   Write("Entrez une prase");
+   Read( sentence);
+
+FOR i FROM 0 TO sentence.length-1 STEP 1 DO
+    // on stocke le caractere selectionne
+    selectedChar:=sentence[i]
+     
+     // on incremente le nombre de mots si le caractere est un espace ou un point
+     IF (selectedChar=" "OR selectedChar=" .")
+          nbMots:=nbMots + 1
+    END_IF
+
+    // on parcour le tableau de voyelles
+    FOR j FROM 0 TO tabVoy.length-1 STEP 1
+    //on stocke la voyelle selectionne
+    selectedVoy:=tabVoy[j]
+    // on verifie si le caractere stocke est une voyelle
+    IF (selectedChar=selectedVoy) THEN
+        numVoy:=numVoy+1
+        END_IF
+    END_FOR
+     
+   Write("le nombre de mots est :",nbMots)
+   Write("le nombre de voyelles est :",numVoy)
+    
+END 
+
+
+//deuxème tache
+
+ALGORITHM sum_elements
+VAR
+   tableau : a : [3, 1, 7, 9], b: [2, 4, 1, 9, 3];
+   a ,b ;
+     c:= a + b ;
+     if (a+b=0 != [c]) ;
+      somme = somme=[c] ;
+
+BEGIN
+    
+    for (a =0;a<0;a>0;) ;
+    for  (b =0;b<0;b>0;) ;
+    if (a+b=0 != [c]) ;
+    somme + (a+b=0 != [c]) ;   
+
+    return somme
+
+
+
+      
+
+   
+
+
+   
+   
+
+   
+
+
+
